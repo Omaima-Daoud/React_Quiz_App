@@ -1,15 +1,15 @@
 import React from 'react'
 
-type Props={
+type Props={ // props is just a name you can choose what you want
     question : string ;
     answers : string [];
     callback : any ;
-    userAnswer : boolean ;
+    userAnswer : any ;
     questionNr : number ; 
     totalQuestions : number ;
 
 }
-const QuestionCard:React.FC<Props> = ({
+const QuestionCard:React.FC<Props> = ({ // .FC to tell react that this is a functional component 
     question,
     answers,
     callback,
